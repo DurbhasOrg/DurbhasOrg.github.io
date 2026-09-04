@@ -1,4 +1,4 @@
-const POSTHOG_TOKEN = 'phc_qJSSK839opXTtbJQYZmUSb';
+const POSTHOG_TOKEN = 'phc_qJSSK839opXTtbJQYZmUSbpQD8dkcT9bEQaspXP3KoMh';
 const POSTHOG_HOST = 'https://us.i.posthog.com';
 const queuedEvents = [];
 let ready = false;
