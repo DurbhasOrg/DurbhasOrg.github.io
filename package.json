@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "simulate": "node scripts/simulate-traffic.mjs",
-    "check": "node --check js/data.js && node --check js/storage.js && node --check js/analytics.js && node --check js/index.js && node --check js/tutor.js && node --check scripts/simulate-traffic.mjs"
+    "simulate:posthog": "node scripts/simulate-posthog-traffic.mjs",
+    "check": "node --check js/data.js && node --check js/storage.js && node --check js/analytics.js && node --check js/index.js && node --check js/tutor.js && node --check scripts/simulate-traffic.mjs && node --check scripts/simulate-posthog-traffic.mjs"
   },
   "devDependencies": {
     "playwright": "^1.57.0"
