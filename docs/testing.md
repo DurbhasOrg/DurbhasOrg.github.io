@@ -33,3 +33,13 @@ npm run simulate -- http://localhost:8000
 ```
 
 The script uses only fictional test information. It drives one directory/view visit, one booking abandonment, and one completed booking. It is a development-only aid and is not used by the deployed static site.
+
+### Dashboard seed traffic
+
+To populate a PostHog dashboard with a small, clearly anonymous test set, run:
+
+```sh
+npm run simulate:posthog
+```
+
+This development-only seeder sends 12 synthetic journeys directly to PostHog: four browse-only journeys, four booking starts that abandon, and four completed bookings. It does not create browser bookings or send personal information. Synthetic visitor IDs begin with `synthetic-abc-parent-`, making them easy to recognize or filter in PostHog. Pass a positive count for another batch size, for example `npm run simulate:posthog -- 20`.
